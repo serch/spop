@@ -60,6 +60,8 @@ string(REPLACE ";" " " SOUP_CFLAGS "${SOUP_CFLAGS}")
 pkg_check_modules(SOX sox)
 string(REPLACE ";" " " SOX_CFLAGS "${SOX_CFLAGS}")
 
+LINK_DIRECTORIES( /usr/local/opt/gettext/lib )
+
 # spop daemon
 set(SPOPD
   src/appkey.c
