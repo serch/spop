@@ -266,6 +266,7 @@ def menu_playlists(sc):
     return True
 
 def menu_playlist(sc, idx):
+    idx = str(idx).zfill(2)
     tracks = sc.ls(idx)["tracks"]
 
     # TODO: handle unavailable tracks
